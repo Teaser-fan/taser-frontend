@@ -30,7 +30,23 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/html5shiv.js",
+              "src/assets/scripts/jquery-1.8.3.min.js",
+              "src/assets/scripts/jquery.musemenu.js",
+              "src/assets/scripts/jquery.museoverlay.js",
+              "src/assets/scripts/jquery.musepolyfill.bgsize.js",
+              "src/assets/scripts/jquery.museresponsive.js",
+              "src/assets/scripts/jquery.watch.js",
+              "src/assets/scripts/museconfig.js",
+              "src/assets/scripts/museutils.js",
+              "src/assets/scripts/musewpdisclosure.js",
+              "src/assets/scripts/musewpslideshow.js",
+              "src/assets/scripts/require.js",
+              "src/assets/scripts/touchswipe.js",
+              "src/assets/scripts/webpro.js",
+              "src/assets/scripts/whatinput.js"
+            ]
           },
           "configurations": {
             "production": {

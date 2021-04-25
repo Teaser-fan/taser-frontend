@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/css/site_global.css";
+@import "./assets/css/master_pag-maestra---pre-user.css";
+@import "./assets/css/headder-footer.css";
+@import "./assets/css/index.css";
