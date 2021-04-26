@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static('./dist/Taser'));
+app.use(express.static('./Taser'));
 
 app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'Taser'}),
