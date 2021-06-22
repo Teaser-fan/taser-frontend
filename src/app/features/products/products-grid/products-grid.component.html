@@ -63,49 +63,7 @@
         </div>
        </div>
       </nav>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u3603"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u3603_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu3612"><!-- group -->
-        <div class="clip_frame grpelem" id="u3612"><!-- image -->
-         <img class="block temp_no_img_src" id="u3612_img" src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem" id="buttonu9064" routerLink="/products/bid" data-visibility="changed" style="visibility:hidden"><!-- container box --><div class="Button museBGSize colelem shared_content" id="buttonu9066" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu9066_content"><!-- container box --></div><div class="clearfix colelem" id="pu9080"><!-- group --><div class="clip_frame grpelem" id="u9080"><!-- svg --><img class="svg temp_no_img_src" id="u9081" data-orig-src="images/svg-pegado-47x48.svg?crc=3779129877" alt="" data-mu-svgfallback="images/svg%20pegado%2047x48_poster_.png?crc=3060182" data-heightwidthratio="1.0212765957446808" data-image-width="47" data-image-height="48" src="assets/images/blank.gif"/></div><div class="clearfix grpelem shared_content" id="u9065-10" data-content-guid="u9065-10_content"><!-- content --><p id="u9065-2">Crucial</p><p id="u9065-4">revendedor</p><p id="u9065-6">eBay para</p><p id="u9065-8">empresas</p></div></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu3813-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u3813-4" data-content-guid="u3813-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu3789"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u3790"><!-- vertical box -->
-          <div class="MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u3791"><!-- horizontal box -->
-           <div class="MenuItemLabel NoWrap clearfix grpelem" id="u3794-4"><!-- content -->
-            <p class="shared_content" data-content-guid="u3794-4_0_content">BID</p>
-           </div>
-          </div>
-         </div>
-        </nav>
-       </div>
-      </div>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u4171"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u4171_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu4183"><!-- group -->
-        <div class="clip_frame grpelem" id="u4183"><!-- image -->
-         <img class="block temp_no_img_src" id="u4183_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu4541" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4541_content"><!-- container box --><div class="Button rounded-corners colelem" id="buttonu4542" data-visibility="changed" style="visibility:hidden"><!-- container box --></div><div class="clearfix colelem" id="u4543-10"><!-- content --><p id="u4543-2">Crucial</p><p id="u4543-4">revendedor</p><p id="u4543-6">eBay para</p><p id="u4543-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu4197-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u4197-4" data-content-guid="u4197-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu4212"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u4213"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4214" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4217-4"><!-- content --><p class="shared_content" data-content-guid="u4217-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u4209"><!-- column -->
+      <div *ngFor = "let product of products" class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u4209"><!-- column -->
        <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u4209_0_content"><!-- Block link tag --></a>
        <div class="clearfix colelem" id="pu4190"><!-- group -->
         <div class="clip_frame grpelem" id="u4190"><!-- image -->
@@ -115,11 +73,11 @@
        </div>
        <div class="clearfix colelem" id="pu4260-4"><!-- group -->
         <div class="clearfix grpelem shared_content" id="u4260-4" data-content-guid="u4260-4_content"><!-- content -->
-         <p>USD97.660</p>
+         <p>USD{{product.price}}</p>
         </div>
         <nav class="MenuBar clearfix grpelem" id="menuu4236"><!-- horizontal box -->
          <div class="MenuItemContainer clearfix grpelem" id="u4237"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4240" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4243-4"><!-- content --><p class="shared_content" data-content-guid="u4243-4_0_content">BUY</p></div></a>
+          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4240" routerLink="/products/buy/{{product._id}}"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4243-4"><!-- content --><p class="shared_content" data-content-guid="u4243-4_0_content">BUY</p></div></a>
          </div>
         </nav>
        </div>
@@ -135,63 +93,6 @@
         </div>
        </div>
       </nav>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u3823"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u3823_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu3816"><!-- group -->
-        <div class="clip_frame grpelem" id="u3816"><!-- image -->
-         <img class="block temp_no_img_src" id="u3816_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu9097" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu9097_content"><!-- container box --><div class="Button museBGSize colelem shared_content" id="buttonu4537" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4537_content"><!-- container box --></div><div class="clearfix colelem shared_content" id="u9098-10" data-content-guid="u9098-10_content"><!-- content --><p id="u9098-2">Crucial</p><p id="u9098-4">revendedor</p><p id="u9098-6">eBay para</p><p id="u9098-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu3856-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u3856-4" data-content-guid="u3856-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu3832"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u3833"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u3834" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3837-4"><!-- content --><p class="shared_content" data-content-guid="u3837-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u4015"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u4015_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu4018"><!-- group -->
-        <div class="clip_frame grpelem" id="u4018"><!-- image -->
-         <img class="block temp_no_img_src" id="u4018_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu4538" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4538_content"><!-- container box --><div class="Button rounded-corners colelem" id="buttonu4539" data-visibility="changed" style="visibility:hidden"><!-- container box --></div><div class="clearfix colelem" id="u4540-10"><!-- content --><p id="u4540-2">Crucial</p><p id="u4540-4">revendedor</p><p id="u4540-6">eBay para</p><p id="u4540-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu4025-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u4025-4" data-content-guid="u4025-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu4028"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u4029"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4030" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4032-4"><!-- content --><p class="shared_content" data-content-guid="u4032-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u4079"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u4079_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu4082"><!-- group -->
-        <div class="clip_frame grpelem" id="u4082"><!-- image -->
-         <img class="block temp_no_img_src" id="u4082_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu4544" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4544_content"><!-- container box --><div class="Button rounded-corners colelem" id="buttonu4545" data-visibility="changed" style="visibility:hidden"><!-- container box --></div><div class="clearfix colelem" id="u4546-10"><!-- content --><p id="u4546-2">Crucial</p><p id="u4546-4">revendedor</p><p id="u4546-6">eBay para</p><p id="u4546-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu4098-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u4098-4" data-content-guid="u4098-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu4108"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u4109"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4110" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4113-4"><!-- content --><p class="shared_content" data-content-guid="u4113-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
      </div>
      <div class="clearfix grpelem" id="pmenuu5072"><!-- column -->
       <nav class="MenuBar clearfix colelem" id="menuu5072"><!-- horizontal box -->
@@ -203,63 +104,6 @@
         </div>
        </div>
       </nav>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u3866"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u3866_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu3859"><!-- group -->
-        <div class="clip_frame grpelem" id="u3859"><!-- image -->
-         <img class="block temp_no_img_src" id="u3859_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu4550" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4550_content"><!-- container box --><div class="Button rounded-corners colelem" id="buttonu4552" data-visibility="changed" style="visibility:hidden"><!-- container box --></div><div class="clearfix colelem" id="u4551-10"><!-- content --><p id="u4551-2">Crucial</p><p id="u4551-4">revendedor</p><p id="u4551-6">eBay para</p><p id="u4551-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu3899-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u3899-4" data-content-guid="u3899-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu3875"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u3876"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u3877" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3879-4"><!-- content --><p class="shared_content" data-content-guid="u3879-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u3987"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u3987_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu3999"><!-- group -->
-        <div class="clip_frame grpelem" id="u3999"><!-- image -->
-         <img class="block temp_no_img_src" id="u3999_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu4553" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4553_content"><!-- container box --><div class="Button rounded-corners colelem" id="buttonu4555" data-visibility="changed" style="visibility:hidden"><!-- container box --></div><div class="clearfix colelem" id="u4554-10"><!-- content --><p id="u4554-2">Crucial</p><p id="u4554-4">revendedor</p><p id="u4554-6">eBay para</p><p id="u4554-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu4052-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u4052-4" data-content-guid="u4052-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu4055"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u4056"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4059" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4061-4"><!-- content --><p class="shared_content" data-content-guid="u4061-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
-      <div class="pointer_cursor MuseLinkActive shadow clearfix colelem" id="u4141"><!-- column -->
-       <a class="block shared_content" href="taser--lolicos-user-1.html" data-content-guid="u4141_0_content"><!-- Block link tag --></a>
-       <div class="clearfix colelem" id="pu4101"><!-- group -->
-        <div class="clip_frame grpelem" id="u4101"><!-- image -->
-         <img class="block temp_no_img_src" id="u4101_img" data-orig-src="assets/images/imagen-perfil-venta.jpg" alt="" data-heightwidthratio="1.1533101045296168" data-image-width="287" data-image-height="331" src="assets/images/blank.gif"/>
-        </div>
-        <a class="nonblock nontext Button clearfix grpelem shared_content" id="buttonu4556" routerLink="/products/buy" data-visibility="changed" style="visibility:hidden" data-content-guid="buttonu4556_content"><!-- container box --><div class="Button rounded-corners colelem" id="buttonu4557" data-visibility="changed" style="visibility:hidden"><!-- container box --></div><div class="clearfix colelem" id="u4558-10"><!-- content --><p id="u4558-2">Crucial</p><p id="u4558-4">revendedor</p><p id="u4558-6">eBay para</p><p id="u4558-8">empresas</p></div></a>
-       </div>
-       <div class="clearfix colelem" id="pu4144-4"><!-- group -->
-        <div class="clearfix grpelem shared_content" id="u4144-4" data-content-guid="u4144-4_content"><!-- content -->
-         <p>USD97.660</p>
-        </div>
-        <nav class="MenuBar clearfix grpelem" id="menuu4147"><!-- horizontal box -->
-         <div class="MenuItemContainer clearfix grpelem" id="u4148"><!-- vertical box -->
-          <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox shadow gradient rounded-corners clearfix colelem" id="u4151" routerLink="/products/buy"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u4152-4"><!-- content --><p class="shared_content" data-content-guid="u4152-4_0_content">BUY</p></div></a>
-         </div>
-        </nav>
-       </div>
-      </div>
      </div>
     </div>
    </div>

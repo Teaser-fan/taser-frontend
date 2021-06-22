@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/shared/interfaces/product';
+import { ProductsService } from 'src/app/shared/services/products/products.service';
 
 @Component({
   selector: 'app-products-grid',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsGridComponent implements OnInit {
 
-  constructor() { }
+  products: Product[];
+
+  constructor(
+    private productService: ProductsService,
+    private router: Router
+  ) {
+    this.products = [];
+  }
 
   ngOnInit(): void {
+    this.getProducts()
+  }
+
+  async getProducts(){
+    try{
+    const response = await this.productService.getProducts();
+    this.products = response.docs;
+    console.log(this.products)
+    }catch(err){}
   }
 
 }

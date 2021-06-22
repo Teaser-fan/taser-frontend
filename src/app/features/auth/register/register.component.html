@@ -58,19 +58,6 @@
             src="assets/images/blank.gif?crc=4208392903"
           />
         </div>
-        <div
-          class="clearfix grpelem shared_content"
-          id="u1941-9"
-          data-content-guid="u1941-9_content"
-        >
-          <!-- content -->
-          <p id="u1941-2">PROFILE PICTURES</p>
-          <p id="u1941-6">
-            We encourage <span id="u1941-4">high resolution pictures </span>to
-            be approved on teaser
-          </p>
-          <p id="u1941-7">&nbsp;</p>
-        </div>
         <form
           class="form-grp clearfix grpelem"
           id="widgetu1943"
@@ -79,6 +66,7 @@
           action="scripts/form-u1943.php"
           data-sizePolicy="fluidWidth"
           data-pintopage="page_fluidx"
+          [formGroup]="registerForm"
         >
           <!-- none box -->
           <div class="position_content" id="widgetu1943_position_content">
@@ -114,11 +102,19 @@
                 </div>
               </div>
               <span
-                class="fld-input NoWrap actAsDiv rounded-corners clearfix colelem"
+                class="
+                  fld-input
+                  NoWrap
+                  actAsDiv
+                  rounded-corners
+                  clearfix
+                  colelem
+                "
                 id="u1985-4"
                 ><!-- content -->
                 <div id="u1985-3">
                   <input
+                    formControlName="name"
                     class="wrapped-input shared_content"
                     type="text"
                     spellcheck="false"
@@ -134,7 +130,7 @@
                       class="actAsPara shared_content"
                       id="u1985-2"
                       data-content-guid="u1985-2_content"
-                      >Enter full name</span
+                      ></span
                     ></label
                   >
                 </div></span
@@ -172,11 +168,19 @@
                 </div>
               </div>
               <span
-                class="fld-input NoWrap actAsDiv rounded-corners clearfix colelem"
+                class="
+                  fld-input
+                  NoWrap
+                  actAsDiv
+                  rounded-corners
+                  clearfix
+                  colelem
+                "
                 id="u1945-4"
                 ><!-- content -->
                 <div id="u1945-3">
                   <input
+                    formControlName="phoneNumber"
                     class="wrapped-input shared_content"
                     type="tel"
                     spellcheck="false"
@@ -192,7 +196,7 @@
                       class="actAsPara shared_content"
                       id="u1945-2"
                       data-content-guid="u1945-2_content"
-                      >Enter phone</span
+                      ></span
                     ></label
                   >
                 </div></span
@@ -230,11 +234,19 @@
                 </div>
               </div>
               <span
-                class="fld-input NoWrap actAsDiv rounded-corners clearfix colelem"
+                class="
+                  fld-input
+                  NoWrap
+                  actAsDiv
+                  rounded-corners
+                  clearfix
+                  colelem
+                "
                 id="u1949-4"
                 ><!-- content -->
                 <div id="u1949-3">
                   <input
+                    formControlName="address"
                     class="wrapped-input shared_content"
                     type="text"
                     spellcheck="false"
@@ -250,7 +262,7 @@
                       class="actAsPara shared_content"
                       id="u1949-2"
                       data-content-guid="u1949-2_content"
-                      >Enter address</span
+                      ></span
                     ></label
                   >
                 </div></span
@@ -265,7 +277,14 @@
             >
               <!-- none box -->
               <span
-                class="fld-input NoWrap actAsDiv rounded-corners clearfix colelem"
+                class="
+                  fld-input
+                  NoWrap
+                  actAsDiv
+                  rounded-corners
+                  clearfix
+                  colelem
+                "
                 id="u1994-4"
                 ><!-- content -->
                 <div id="u1994-3">
@@ -313,6 +332,138 @@
                 </div>
               </div>
             </div>
+            <div
+              class="fld-grp clearfix colelem"
+              id="widgetu1948"
+              data-required="true"
+              data-sizePolicy="fluidWidth"
+              data-pintopage="page_fluidx"
+            >
+              <!-- none box -->
+              <div class="clearfix colelem" id="pu1950-4">
+                <!-- group -->
+                <label
+                  class="fld-label actAsDiv clearfix grpelem"
+                  id="u1950-4"
+                  for="widgetu1948_input"
+                  ><!-- content --><span
+                    class="actAsPara shared_content"
+                    id="u1950-2"
+                    data-content-guid="u1950-2_content"
+                    >EMAIL</span
+                  ></label
+                >
+                <div class="fld-message clearfix grpelem" id="u1951-4">
+                  <!-- content -->
+                  <p
+                    class="shared_content"
+                    data-content-guid="u1951-4_0_content"
+                  >
+                    Required data
+                  </p>
+                </div>
+              </div>
+              <span
+                class="
+                  fld-input
+                  NoWrap
+                  actAsDiv
+                  rounded-corners
+                  clearfix
+                  colelem
+                "
+                id="u1949-4"
+                ><!-- content -->
+                <div id="u1949-3">
+                  <input
+                    formControlName="email"
+                    class="wrapped-input shared_content"
+                    type="email"
+                    spellcheck="false"
+                    id="widgetu1948_input"
+                    name="custom_U1948"
+                    tabindex="3"
+                    data-content-guid="widgetu1948_input_content"
+                  /><label
+                    class="wrapped-input fld-prompt"
+                    id="widgetu1948_prompt"
+                    for="widgetu1948_input"
+                    ><span
+                      class="actAsPara shared_content"
+                      id="u1949-2"
+                      data-content-guid="u1949-2_content"
+                      ></span
+                    ></label
+                  >
+                </div></span
+              >
+            </div>
+            <div
+              class="fld-grp clearfix colelem"
+              id="widgetu1948"
+              data-required="true"
+              data-sizePolicy="fluidWidth"
+              data-pintopage="page_fluidx"
+            >
+              <!-- none box -->
+              <div class="clearfix colelem" id="pu1950-4">
+                <!-- group -->
+                <label
+                  class="fld-label actAsDiv clearfix grpelem"
+                  id="u1950-4"
+                  for="widgetu1948_input"
+                  ><!-- content --><span
+                    class="actAsPara shared_content"
+                    id="u1950-2"
+                    data-content-guid="u1950-2_content"
+                    >PASSWORD</span
+                  ></label
+                >
+                <div class="fld-message clearfix grpelem" id="u1951-4">
+                  <!-- content -->
+                  <p
+                    class="shared_content"
+                    data-content-guid="u1951-4_0_content"
+                  >
+                    Required data
+                  </p>
+                </div>
+              </div>
+              <span
+                class="
+                  fld-input
+                  NoWrap
+                  actAsDiv
+                  rounded-corners
+                  clearfix
+                  colelem
+                "
+                id="u1949-4"
+                ><!-- content -->
+                <div id="u1949-3">
+                  <input
+                    formControlName="password"
+                    class="wrapped-input shared_content"
+                    type="password"
+                    spellcheck="false"
+                    id="widgetu1948_input"
+                    name="custom_U1948"
+                    tabindex="3"
+                    data-content-guid="widgetu1948_input_content"
+                  /><label
+                    class="wrapped-input fld-prompt"
+                    id="widgetu1948_prompt"
+                    for="widgetu1948_input"
+                    ><span
+                      class="actAsPara shared_content"
+                      id="u1949-2"
+                      data-content-guid="u1949-2_content"
+                      ></span
+                    ></label
+                  >
+                </div></span
+              >
+            </div>
             <div class="clearfix colelem" id="pwidgetu1954">
               <!-- group -->
               <div
@@ -326,11 +477,19 @@
                 <div class="clearfix colelem" id="pu1956-4">
                   <!-- group -->
                   <span
-                    class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem"
+                    class="
+                      fld-input
+                      NoWrap
+                      actAsDiv
+                      rounded-corners
+                      clearfix
+                      grpelem
+                    "
                     id="u1956-4"
                     ><!-- content -->
                     <div id="u1956-3">
                       <input
+                        formControlName="city"
                         class="wrapped-input shared_content"
                         type="text"
                         spellcheck="false"
@@ -346,7 +505,7 @@
                           class="actAsPara shared_content"
                           id="u1956-2"
                           data-content-guid="u1956-2_content"
-                          >Enter City</span
+                          ></span
                         ></label
                       >
                     </div></span
@@ -384,7 +543,14 @@
                 <div class="clearfix colelem" id="pu1965-4">
                   <!-- group -->
                   <span
-                    class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem"
+                    class="
+                      fld-input
+                      NoWrap
+                      actAsDiv
+                      rounded-corners
+                      clearfix
+                      grpelem
+                    "
                     id="u1965-4"
                     ><!-- content -->
                     <div id="u1965-3">
@@ -404,7 +570,7 @@
                           class="actAsPara shared_content"
                           id="u1965-2"
                           data-content-guid="u1965-2_content"
-                          >Enter State</span
+                          ></span
                         ></label
                       >
                     </div></span
@@ -445,11 +611,19 @@
                 <div class="clearfix colelem" id="pu1997-4">
                   <!-- group -->
                   <span
-                    class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem"
+                    class="
+                      fld-input
+                      NoWrap
+                      actAsDiv
+                      rounded-corners
+                      clearfix
+                      grpelem
+                    "
                     id="u1997-4"
                     ><!-- content -->
                     <div id="u1997-3">
                       <input
+                        formControlName="postalCode"
                         class="wrapped-input shared_content"
                         type="text"
                         spellcheck="false"
@@ -465,7 +639,7 @@
                           class="actAsPara shared_content"
                           id="u1997-2"
                           data-content-guid="u1997-2_content"
-                          >Enter zip Code</span
+                          ></span
                         ></label
                       >
                     </div></span
@@ -503,11 +677,19 @@
                 <div class="clearfix colelem" id="pu1988-4">
                   <!-- group -->
                   <span
-                    class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem"
+                    class="
+                      fld-input
+                      NoWrap
+                      actAsDiv
+                      rounded-corners
+                      clearfix
+                      grpelem
+                    "
                     id="u1988-4"
                     ><!-- content -->
                     <div id="u1988-3">
                       <input
+                        formControlName="country"
                         class="wrapped-input shared_content"
                         type="text"
                         spellcheck="false"
@@ -523,7 +705,7 @@
                           class="actAsPara shared_content"
                           id="u1988-2"
                           data-content-guid="u1988-2_content"
-                          >Enter Country</span
+                          ></span
                         ></label
                       >
                     </div></span
@@ -736,7 +918,14 @@
                   ></label
                 >
                 <span
-                  class="fld-input NoWrap actAsDiv rounded-corners clearfix colelem"
+                  class="
+                    fld-input
+                    NoWrap
+                    actAsDiv
+                    rounded-corners
+                    clearfix
+                    colelem
+                  "
                   id="u1960-4"
                   ><!-- content -->
                   <div id="u1960-3">
@@ -756,7 +945,7 @@
                         class="actAsPara shared_content"
                         id="u1960-2"
                         data-content-guid="u1960-2_content"
-                        >Enter Instagram User</span
+                        ></span
                       ></label
                     >
                   </div></span
@@ -793,7 +982,14 @@
                 <div class="clearfix colelem" id="pu1979-4">
                   <!-- group -->
                   <span
-                    class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem"
+                    class="
+                      fld-input
+                      NoWrap
+                      actAsDiv
+                      rounded-corners
+                      clearfix
+                      grpelem
+                    "
                     id="u1979-4"
                     ><!-- content -->
                     <div id="u1979-3">
@@ -813,7 +1009,7 @@
                           class="actAsPara shared_content"
                           id="u1979-2"
                           data-content-guid="u1979-2_content"
-                          >Enter PayPal Account email</span
+                          ></span
                         ></label
                       >
                     </div></span
@@ -832,6 +1028,7 @@
             </div>
             <button
               class="submit-btn NoWrap clearfix colelem"
+              (click)="onRegister()"
               id="u1991-4"
               type="submit"
               value="SUBMIT APPLICATION"
@@ -869,22 +1066,7 @@
             </div>
           </div>
         </form>
-        <div
-          class="clearfix grpelem shared_content"
-          id="u2000-5"
-          data-content-guid="u2000-5_content"
-        >
-          <!-- content -->
-          <p id="u2000-2">PROFILE</p>
-          <p id="u2000-3">&nbsp;</p>
-        </div>
-        <div
-          class="grpelem shared_content"
-          id="u2001"
-          data-content-guid="u2001_content"
-        >
-          <!-- simple frame -->
-        </div>
+
         <div
           class="clearfix grpelem shared_content"
           id="u2169-4"
