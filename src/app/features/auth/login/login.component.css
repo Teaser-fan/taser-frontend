@@ -1,1 +1,9 @@
 @import "../../../../assets/css/taser--login.css";
+
+
+
+.input-box{
+  border-radius: 20px;
+  background-color: white;
+  height: 40px;
+}
