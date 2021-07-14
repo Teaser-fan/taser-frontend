@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://taser-backend.herokuapp.com/api/v1',
+  baseUrl: 'http://localhost:3000/api/v1',
 };
